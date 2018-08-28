@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+    crossorigin="anonymous">
+  <style>
+    body {
+      width: 50%;
+      margin: auto;
+    }
+
+    h1 {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      margin-top: 50px;
+    }
+
+    label {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      margin: 20px;
+    }
+
+    p {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      margin: 20px;
+    }
+
+    input {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      margin: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <!--Exercicio 1-->
+  <h1>Exercicio 1</h1>
+  <form class="form-group">
+    <label for="exercicio1-campo">Insira um número entre 100 e 300</label>
+    <input type="number" class="form-control" id="exercicio1-campo" min="100" max="300" required>
+    <input type="button" onclick="exercicio1Clique()" value="Validar" class="btn btn-primary w-100">
+    <p id="exercicio1-p"></p>
+  </form>
+
+  <!--Exercicio 2-->
+  <h1>Exercicio 2</h1>
+  <form class="form-group">
+    <label for="exercicio2-campo">Insira uma data</label>
+    <input type="date" class="form-control" id="exercicio2-campo" required>
+    <input type="button" onclick="exercicio2Clique()" value="Ok" class="btn btn-primary w-100">
+    <p id="exercicio2-p"></p>
+  </form>
+
+  <!--Exercicio 3-->
+  <h1>Exercicio 3</h1>
+  <form class="form-group">
+    <label for="exercicio3-peso">Insira seu peso</label>
+    <input type="text" class="form-control" id="exercicio3-peso">
+    <label for="exerrcicio3-altura">Insira sua altura</label>
+    <input type="text" class="form-control" id="exercicio3-altura">
+    <label class="form-check-label" for="sexo">Homem</label>
+    <input class="form-check-input" type="radio" name="sexo" id="sexo" value="homem">
+    <label class="form-check-label" for="sexo">Mulher</label>
+    <input class="form-check-input" type="radio" name="sexo" id="sexo" value="mulher">
+    <input type="button" onclick="exercicio3Clique()" value="Calcular IMC" class="btn btn-primary w-100">
+    <p id="exercicio3-p"></p>
+  </form>
+
+  <!--Exercicio 4-->
+  <h1>Exercicio 4</h1>
+  <form class="form-group">
+    <label for="exercicio4-campo">Insira um CPF</label>
+    <input type="text" class="form-control" id="exercicio4-campo" maxlength="11" onchange="exercicio4Clique()">
+  </form>
+
+  <h1>Exercicio 5</h1>
+  <form>
+    <label for="exercicio5-valor">Insira o valor de empréstimo</label>
+    <input type="text" class="form-control" id="exercicio5-valor">
+    <label for="exercicio5-prestacoes">Insira o número de prestações</label>
+    <input type="number" class="form-control" id="exercicio5-prestacoes" min="0">
+    <label for="exercicio5-juros">Insira o valor de taxa de juros</label>
+    <input type="number" class="form-control" id="exercicio5-juros" min="0" max="100">
+    <input type="button" onclick="exercicio5Clique()" value="Calcular" class="btn btn-primary w-100">
+  </form>
+
+  <table class="table" id="table">
+    <thead>
+      <tr>
+        <th>Mês</th>
+          <th scope="col">Saldo Devedor</th>
+          <th scope="col">Amortização</th>
+          <th scope="col">Juros</th>
+          <th scope="col">Prestação</th>
+      </tr>
+      <thead>
+  </table>
+  <script src="index.js"></script>
+</body>
+
+</html>
